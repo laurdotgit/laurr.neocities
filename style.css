@@ -1,0 +1,300 @@
+@font-face {
+  font-family: 'basiic';
+  src: url('https://leonidas.neocities.org/fonts/basiic.ttf') format("truetype");
+}
+@font-face {
+  font-family: 'MSSans';
+  src: url('https://leonidas.neocities.org/fonts/MSSans.ttf') format("truetype");
+}
+@font-face {
+  font-family: 'MSSansBold';
+  src: url('https://leonidas.neocities.org/fonts/MSSansBold.ttf') format("truetype");
+}
+
+body {
+  color: #a7bad3;
+  font-family: 'basiic';
+  font-weight: 600;
+  cursor: url('images/cursor-blue.png'), auto;
+  display: block;
+  overflow-x: hidden;
+  background-color: black;
+}
+
+li{
+  margin-left:35px;
+}
+
+ /* unvisited link */
+a:link {
+  color: #946ccc;
+}
+
+/* visited link */
+a:visited {
+  color: #837ba4;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: #93e0ec;
+}
+
+mark{
+  color: #aE3254;
+  background-color: black;
+}
+
+.titleMainDiv {
+  justify-content:center;
+  align-items: center;
+  margin-left:5px;
+  margin-right:5px;
+}
+
+.defaultMainDiv {
+  justify-content:center;
+  align-items: center;
+  margin-left:5px;
+  margin-right:5px;
+}
+
+.blogMainDiv {
+  justify-content:center;
+  align-items: center;
+  margin-left:30px;
+  margin-right:30px;
+  line-height: 1.2em;
+}
+
+/* this is for actual blog posts*/
+.realblogMainDiv {
+  justify-content:center;
+  align-items: center;
+  margin-left:50px;
+  margin-right:50px;
+  line-height: 1.5em;
+  text-indent: 25px;
+}
+
+/* this is for other long posts*/
+.longMainDiv {
+  justify-content:center;
+  align-items: center;
+  margin-left:30px;
+  margin-right:30px;
+  line-height: 1.5em;
+}
+.longMainDiv > p {
+  text-indent: 25px;
+}
+
+.wrapper {
+  max-width:64%;
+  margin: auto;
+  margin-top:20px;
+  margin-bottom:20px;
+
+  justify-content:center;
+  align-items: center;
+
+  border-style:ridge;
+  border-width:5px;
+  border-color:indigo;
+  background-color: black;
+  min-height:500px;
+  
+}
+
+aside{
+	width: 30%;
+	margin-right: -25%;
+	float: right;
+	position: relative;
+
+	font-size: 0.8rem;
+	font-style: italic;
+  border-style:ridge;
+  border-width:3px;
+  border-color:indigo;
+  background-color: black;
+  
+  line-height: 1.1em;
+}
+
+aside > p {
+    margin: 0.4rem;
+    line-height:0em;
+} /* inset text within the aside */
+
+.smaller {
+  font-size: 0.8em;
+}
+
+.larger {
+  font-size:1.2em;
+}
+
+.commentary{
+  font-size: 0.8em;
+  text-align: right;
+  margin-left:20%;
+}
+
+/*
+* Classes I made for stuff
+*/
+.webring{
+  content: "This website is part of a webring!<br><br><< <a href="https://woah.encours.xyz/">alice</a> | <a href="mudcrab.org">mudcrab </a>>>";
+}
+
+.column1-2 {
+  float: left;
+  width: 50%;
+}
+
+.column1-3 {
+  float: left;
+  width: 33%;
+}
+
+.column1-7 {
+  float: left;
+  width: 14.2%;
+}
+
+.invisible{
+  visibility:hidden;
+}
+
+.centuryp {
+  text-indent:1rem;
+  /*font-family: 'Roboto Slab', serif;
+  font-size: 0.9em;*/
+}
+
+.century{
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.9em;
+}
+
+/*Used for the screenplay century, and maybe something else later!*/
+
+.scriptwrapper{
+  font-family: Typewriter;
+  font-size: 14px;
+}
+
+.scriptspeaker{
+  text-indent:100px;
+}
+
+.scriptline{
+  margin-left:15%;
+  margin-right:15%;
+}
+
+/*Used for the century calendar*/
+
+.caltitle {
+  text-align: center;
+  align-items: center;
+  margin-top:30px;
+}
+
+.calmonth {
+  font-size: 18px;
+  float: left;
+  width: 33%;
+
+}
+
+.calbody{
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 425px;
+}
+
+.calbody li {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  height: 65px;
+  list-style-type: none;
+  border-style:ridge;
+  border-width:2px;
+  border-color:indigo;
+}
+
+.calbody a {
+  text-decoration: none;
+}
+
+.yearcal {
+  align-items: center;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+
+.yearcaltitle {
+  font-size:24px;
+  line-height:1.2em;
+  text-decoration: none;
+}
+
+.yearcalday {
+  font-size: 12px;
+  float:left;
+  margin: 1px;
+  padding: 0;
+  height: 14px;
+  width: 13%;
+  text-align: center;
+}
+
+.yearcaldate {
+  font-size: 18px;
+  float:left;
+  margin: 0;
+  padding: 0;
+  height: 20px;
+  border-style:ridge;
+  border-width:1px;
+  border-color:indigo;
+  width: 13%;
+  text-align: center;
+  text-decoration: none;
+}
+
+.yearcalblank{
+  float:left;
+  margin-left: 2;
+  padding: 0;
+  height: 20px;
+  width: 13%;
+  border-style:solid;
+  border-width:1px;
+  border-color:black;
+}
+
+.yearcalmonth {
+  float: left;
+  width: 180px;
+  height: 160px;
+  margin: 0px 8px;
+}
+/* ty alice for showing me how to do this! readable on mobile now, yippee!*/
+@media only screen and (max-width:1080px){
+
+  .wrapper{
+    max-width: 85%;
+  }
+}
